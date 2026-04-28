@@ -1,3 +1,8 @@
-git add .
-git commit -m "Actividad semana 1"
-git push 
+El uso responsable de la información en internet permite una ciudadanía crítica e informada.
+Ayuda a identificar fuentes confiables y evitar la desinformación.
+Esto fortalece la participación ciudadana con opiniones basadas en hechos.
+Por otro lado, herramientas como Git organizan el trabajo técnico de forma colaborativa.
+Git registra cambios y promueve la transparencia y la responsabilidad.
+Esto se relaciona con procesos democráticos donde cada aporte es visible.
+En conjunto, ambas prácticas fomentan una cultura digital ética y participativa.
+Teniendo en cuenta el mundo tecnologico en un bien social
