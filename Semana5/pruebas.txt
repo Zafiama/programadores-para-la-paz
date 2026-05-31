@@ -1,0 +1,13 @@
+RESULTADOS DE LAS PRUEBAS DE RUTAS
+
+http://localhost:3000
+Resultado: Se muestra el mensaje "Servidor activo"
+Descripción: Esta es la ruta raíz del servidor. Cuando accedes a la URL base sin ningún sufijo, el servidor responde con un mensaje simple confirmando que está en funcionamiento.
+
+http://localhost:3000/saludo
+Resultado: Se muestra el mensaje "Hola comunidad"
+Descripción: Esta ruta GET específica responde con un saludo a la comunidad. Es un ejemplo de cómo Express puede tener múltiples rutas que responden de formas diferentes según la URL solicitada.
+
+http://localhost:3000/mensaje/juan
+Resultado: Se muestra el mensaje "Hola juan"
+Descripción: Esta ruta utiliza un parámetro dinámico (:nombre) que captura el valor de la URL. En este caso "juan" se envía como parámetro y el servidor responde personalizando el saludo. Podrías cambiar "juan" por cualquier otro nombre y el servidor lo capturaría y respondería dinámicamente.
