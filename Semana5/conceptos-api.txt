@@ -1,0 +1,30 @@
+¿QUÉ HACE LA RUTA POST /reporte?
+
+La ruta POST /reporte recibe datos en formato JSON enviados desde el cliente (usuario), específicamente un mensaje. El servidor captura ese mensaje del cuerpo de la solicitud (req.body.mensaje) y responde con un JSON que confirma que el reporte fue recibido, incluyendo el mensaje que se envió.
+
+ESTRUCTURA DE LA RESPUESTA:
+- "estado": Indica que el reporte fue recibido exitosamente
+- "mensaje": Devuelve el mismo mensaje que el usuario envió
+
+FUNCIONAMIENTO:
+Este endpoint NO se puede probar directamente escribiendo la URL en el navegador porque los navegadores solo hacen solicitudes GET. Para probar una solicitud POST, necesitas usar herramientas como:
+- Thunder Client
+- Postman
+- Fetch desde JavaScript
+- curl desde la terminal
+
+¿PARA QUÉ SIRVE EN UNA APLICACIÓN COMUNITARIA?
+
+Esta ruta es fundamental para crear sistemas de reportes en comunidades. Ejemplos de uso:
+
+1. REPORTES DE PROBLEMAS: Los miembros pueden enviar reportes sobre problemas en la comunidad (baches en calles, alumbrado dañado, etc.)
+
+2. ALERTAS DE SEGURIDAD: Se pueden enviar alertas sobre situaciones de seguridad que se deben comunicar rápidamente
+
+3. REGISTRO DE EVENTOS: Documentar eventos comunitarios, reuniones o actividades importantes
+
+4. RECOPILACIÓN DE FEEDBACK: Recolectar opiniones y sugerencias de los miembros de la comunidad
+
+5. SEGUIMIENTO DE TAREAS: Registrar tareas comunitarias que necesitan realizarse
+
+La ruta POST permite que la información fluya del cliente al servidor de forma segura, almacenable y organizada, creando un canal de comunicación estructurado entre la comunidad y la plataforma.
