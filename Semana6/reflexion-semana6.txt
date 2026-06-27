@@ -1,0 +1,8 @@
+Es importante que las plataformas tecnológicas reciban reportes estructurados porque facilitan el procesamiento automático de la información.
+Los datos en formato JSON permiten validar, almacenar y enrutar reportes a los responsables de forma más rápida.
+La estructura reduce errores de interpretación y evita pérdida de información relevante.
+Con datos estructurados se puede priorizar incidencias, geolocalizarlas y generar estadísticas útiles para la toma de decisiones.
+Además, facilita la integración con otros sistemas (bases de datos, dashboards y herramientas de notificación).
+La estandarización mejora la trazabilidad y la rendición de cuentas frente a la comunidad.
+También permite que los ciudadanos reciban respuestas automáticas y seguimiento del estado de su reporte.
+En resumen, los reportes estructurados hacen que las plataformas sean más eficientes, transparentes y útiles para la ciudadanía.
