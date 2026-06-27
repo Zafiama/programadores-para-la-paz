@@ -1,0 +1,28 @@
+EJECUCIÓN DEL SERVIDOR
+======================
+
+Al ejecutar "node server.js":
+
+1. QUÉ OCURRE:
+   El servidor Node.js se inicia y crea una instancia de la aplicación Express. La aplicación comienza a escuchar en el puerto 3000 y permanece activa esperando solicitudes de clientes.
+
+2. MENSAJE EN LA TERMINAL:
+   "Servidor ejecutándose en puerto 3000"
+   
+   Este mensaje confirma que el servidor está activo y listo para recibir solicitudes HTTP.
+
+3. CUANDO VISITAS /estado:
+   El servidor responde con un objeto JSON:
+   {
+     "estado": "Servidor funcionando",
+     "servicio": "API comunitaria"
+   }
+   
+   Esta ruta devuelve información del estado del servidor en formato JSON, útil para verificar si la aplicación está operativa.
+
+4. CUANDO VISITAS /:
+   El servidor responde con el texto: "Servidor activo y funcionando"
+   
+   Esta es la ruta principal que confirma que el servidor está en línea y respondiendo solicitudes.
+
+NOTA: El servidor permanece en ejecución hasta que presiones Ctrl+C en la terminal, momento en el cual se detiene.

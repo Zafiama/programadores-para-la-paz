@@ -1,1 +1,15 @@
+Pregunta 1:
+Respuesta: B
+Explicación: Un servidor es un sistema que ejecuta aplicaciones y responde solicitudes de los usuarios.
 
+Pregunta 2:
+Respuesta: B
+Explicación: Escuchar en un puerto significa que el servidor está esperando solicitudes en una dirección específica.
+
+Pregunta 3:
+Respuesta: B
+Explicación: Monitorear ejecución y registrar errores es importante para la estabilidad de un servidor.
+
+Pregunta 4:
+Respuesta: A
+Explicación: Los logs son archivos que registran la actividad y eventos del sistema.
