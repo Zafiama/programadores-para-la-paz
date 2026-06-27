@@ -1,0 +1,21 @@
+COMANDO: uname -a
+Información que muestra:
+- El nombre del sistema operativo
+- El nombre del host/servidor
+- La versión del kernel
+- La arquitectura del procesador
+- Otros detalles del sistema
+
+COMO: whoami
+Información que muestra:
+- El nombre de usuario actual conectado en la sesión
+- La identidad del usuario que ejecuta comandos
+
+¿Por qué es útil conocer información del sistema?
+Es fundamental para:
+- Diagnosticar problemas del servidor
+- Verificar la compatibilidad de software
+- Monitorear el rendimiento del sistema
+- Identificar vulnerabilidades de seguridad
+- Administrar permisos y usuarios correctamente
+- Tomar decisiones sobre actualizaciones y mantenimiento
