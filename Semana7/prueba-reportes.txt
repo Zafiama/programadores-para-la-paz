@@ -1,0 +1,20 @@
+Prueba de Reporte GET /reportes
+
+Cuando consultas la ruta GET /reportes, el servidor retorna un array JSON con todos los reportes que han sido registrados en el sistema.
+
+En la primera consulta, el array estará vacío porque no hemos creado ningún reporte aún: []
+
+Después de registrar un reporte mediante POST /reportes, la consulta GET /reportes muestra el reporte con su id, tipo y descripción.
+
+Ejemplo de respuesta después de registrar un reporte:
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  }
+]
+
+Si registramos más reportes, todos aparecerán en la lista. Cada reporte tiene un id único que se asigna automáticamente basado en la cantidad de reportes existentes.
+
+Este comportamiento demuestra cómo funciona el almacenamiento en memoria: los datos se mantienen en el array mientras el servidor está ejecutándose, pero se pierden si se detiene el servidor.
