@@ -1,0 +1,26 @@
+5 Prácticas de seguridad para plataformas digitales comunitarias:
+
+1. No exponer datos personales
+   - Proteger información privada de los usuarios
+   - Cumplir con regulaciones de privacidad (GDPR, CCPA, etc.)
+   - Usar encriptación para datos sensibles
+
+2. Proteger credenciales
+   - Usar contraseñas fuertes y hasheadas
+   - Implementar autenticación de dos factores (2FA)
+   - No guardar contraseñas en texto plano
+
+3. Usar conexiones seguras
+   - Implementar HTTPS en toda la plataforma
+   - Usar certificados SSL/TLS válidos
+   - Encriptar datos en tránsito
+
+4. Registrar accesos (Auditoría)
+   - Mantener logs de accesos y actividades
+   - Detectar intentos de acceso no autorizados
+   - Facilitar investigaciones de seguridad
+
+5. Limitar acceso a información sensible
+   - Aplicar principio de menor privilegio
+   - Usar roles y permisos basados en necesidad
+   - Restringir acceso a datos críticos
