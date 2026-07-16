@@ -1,0 +1,43 @@
+ITERACIÓN SEMANA 10 - DEFINICIÓN Y PLANIFICACIÓN
+
+¿QUÉ 2 TAREAS DEL BACKLOG HARÍAS PRIMERO?
+
+Tarea 1: Crear formulario de registro de incidencias
+   - Interfaz sencilla para que ciudadanos reporten incidencias
+   - Validación de datos básicos
+   - Guardado en base de datos
+
+Tarea 2: Integrar notificación automática a Telegram
+   - Conectar sistema con bot de Telegram
+   - Enviar alerta cuando se registre una incidencia
+   - Confirmación de envío de mensaje
+
+¿POR QUÉ SON LAS MÁS IMPORTANTES?
+
+- Son las funcionalidades críticas del MVP (Mínimo Producto Viable)
+- Sin registro no hay incidencias que procesar
+- Sin notificación, los coordinadores no pueden actuar rápidamente
+- Generan el ciclo básico: usuario reporta → coordinador se entera → acción comunitaria
+- Permiten validar la solución con usuarios reales antes de agregar más complejidad
+
+¿QUÉ SIGNIFICA QUE UNA TAREA ESTÉ "TERMINADA"? - DEFINICIÓN DE TERMINADO
+
+1. FUNCIONA
+   - El código se ejecuta sin errores
+   - Los datos se guardan correctamente en la base de datos
+   - Se probó en el navegador o aplicación destino
+
+2. FUE PROBADA
+   - Se probó con datos válidos e inválidos
+   - Se verificó en diferentes dispositivos o navegadores
+   - El usuario puede completar el flujo sin problemas
+
+3. QUEDÓ REGISTRADA EN GIT
+   - Se hizo commit con mensaje descriptivo
+   - El código está en la rama correspondiente
+   - Se incluyó documentación básica si es necesario
+
+4. CUMPLE CRITERIOS DE ACEPTACIÓN
+   - Resuelve la historia de usuario asociada
+   - Respeta las reglas de seguridad y privacidad
+   - No regresa datos sensibles innecesariamente
