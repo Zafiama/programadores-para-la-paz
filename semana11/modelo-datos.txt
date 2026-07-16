@@ -1,0 +1,56 @@
+MODELO DE DATOS - PLATAFORMA COMUNITARIA
+
+════════════════════════════════════════════════════════════════════════════════
+
+Entidad: Causa
+
+Campos principales:
+- id (número único, clave primaria)
+- titulo (texto, máximo 100 caracteres)
+- descripcion (texto, máximo 500 caracteres)
+- fecha_creacion (fecha y hora)
+- estado (activa, completada, archivada)
+- usuario_id (referencia al usuario que creó la causa)
+
+Propósito:
+Guardar las causas comunitarias que serán visibles en la plataforma.
+Permite que la comunidad conozca qué iniciativas existen y quién las promueve.
+
+════════════════════════════════════════════════════════════════════════════════
+
+Entidad: Apoyo
+
+Campos principales:
+- id (número único, clave primaria)
+- causa_id (referencia a la causa que se apoya)
+- usuario_id (referencia al usuario que apoya)
+- fecha_apoyo (fecha y hora del apoyo)
+- comentario (texto opcional, máximo 250 caracteres)
+
+Propósito:
+Registrar los apoyos que recibe cada causa para hacer seguimiento a la participación comunitaria.
+Permite medir el impacto de cada iniciativa y el compromiso de los usuarios.
+
+════════════════════════════════════════════════════════════════════════════════
+
+Entidad: Usuario
+
+Campos principales:
+- id (número único, clave primaria)
+- nombre_usuario (texto único)
+- email (texto único, debe ser válido)
+- password (texto encriptado, nunca en texto plano)
+- fecha_registro (fecha y hora)
+- estado (activo, inactivo, suspendido)
+
+Propósito:
+Guardar la información de los usuarios registrados en la plataforma.
+Permite autenticar usuarios y mantener un registro de la comunidad participante.
+Nota: Nunca se debe almacenar información privada como documentos de identidad o teléfonos sin consentimiento explícito.
+
+════════════════════════════════════════════════════════════════════════════════
+
+Relaciones:
+- Un Usuario puede crear múltiples Causas (1 a N)
+- Un Usuario puede dar múltiples Apoyos (1 a N)
+- Una Causa puede recibir múltiples Apoyos (1 a N)
