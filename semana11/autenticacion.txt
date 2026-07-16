@@ -1,0 +1,17 @@
+AUTENTICACIÓN EN PLATAFORMAS DIGITALES
+
+¿QUÉ ES EL LOGIN?
+El login permite identificar a un usuario antes de darle acceso a ciertas funciones de la aplicación. Es el proceso mediante el cual un usuario proporciona sus credenciales (generalmente nombre de usuario y contraseña) para verificar su identidad y acceder a su cuenta personal.
+
+¿POR QUÉ ALGUNAS RUTAS DEBEN ESTAR PROTEGIDAS?
+Algunas rutas deben estar protegidas porque pueden contener información privada, registros internos, datos sensibles o acciones que no deberían estar disponibles para cualquier persona. Por ejemplo, un usuario solo debe poder ver y modificar sus propios datos, no los de otros usuarios. De igual forma, ciertas acciones administrativas (eliminar causas, suspender usuarios) solo deben estar disponibles para administradores.
+
+¿QUÉ INFORMACIÓN NO DEBERÍA EXPONERSE PÚBLICAMENTE?
+No se deben exponer públicamente contraseñas, documentos de identidad, números de teléfono, direcciones personales, tokens de autenticación, claves de API, datos bancarios ni información sensible de la comunidad que requiera privacidad. Esta información debe almacenarse de forma segura, encriptada cuando sea necesario, y solo accesible por el usuario propietario o administradores autorizados.
+
+PRINCI­PIOS DE SEGURIDAD:
+- Siempre usar conexiones HTTPS (encriptadas)
+- Nunca guardar contraseñas en texto plano
+- Implementar sesiones seguras con tokens
+- Validar permisos en cada solicitud
+- Registrar accesos para auditoría
