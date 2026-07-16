@@ -1,0 +1,24 @@
+MODELO DE DATOS - PETICIÓN EN 3 CLICS
+
+ENTIDAD 1: CAUSA
+- id: Identificador único de la causa (entero)
+- titulo: Nombre o título de la causa (texto)
+- descripcion: Descripción detallada de la causa y su objetivo (texto largo)
+- fecha: Fecha de creación de la causa (fecha)
+
+Función: Almacena la información principal de cada petición o causa comunitaria creada por los ciudadanos. Permite que múltiples personas apoyen la misma iniciativa.
+
+---
+
+ENTIDAD 2: APOYO
+- id: Identificador único del apoyo (entero)
+- causa_id: Referencia a la causa que está siendo apoyada (entero, clave foránea)
+- nombre: Nombre de la persona que apoya (texto)
+- fecha: Fecha en que se registró el apoyo (fecha)
+
+Función: Registra cada apoyo individual a una causa. Vincula ciudadanos con sus causas de interés y permite contar el número total de apoyos por causa.
+
+---
+
+RELACIÓN:
+Una Causa puede tener muchos Apoyos (relación 1:N). Cada Apoyo pertenece a una sola Causa.

@@ -1,0 +1,38 @@
+AUTOMATIZACIÓN CON n8n Y TELEGRAM
+
+ESCENARIO: Notificación de nueva causa registrada
+
+---
+
+EVENTO DESENCADENANTE:
+Una nueva causa es creada y registrada en la base de datos de la plataforma.
+
+---
+
+FLUJO DE AUTOMATIZACIÓN:
+1. n8n detecta la creación de una nueva causa en la base de datos
+2. Se dispara un webhook que captura los datos de la causa
+3. n8n procesa la información y crea un mensaje para Telegram
+4. El bot de Telegram envía un mensaje al canal comunitario notificando:
+   "Nueva causa creada en la plataforma: [Título de la causa]"
+5. Los miembros de la comunidad reciben la notificación en tiempo real
+
+---
+
+MENSAJE ENVIADO:
+"¡Nueva causa registrada! Título: [Título]. Apóyala en nuestra plataforma."
+
+---
+
+INFORMACIÓN QUE NO DEBE ENVIARSE (SEGURIDAD Y PRIVACIDAD):
+- Números de cédula o identificación
+- Números de teléfono privados
+- Direcciones domiciliarias
+- Correos electrónicos completos de usuarios
+- Información bancaria o datos de pago
+- Comentarios sensibles o críticas personales
+- Datos de ubicación en tiempo real
+- Contraseñas o tokens de acceso
+
+JUSTIFICACIÓN:
+Estos datos personales deben mantenerse privados para proteger la identidad y seguridad de los ciudadanos que participan en la plataforma, cumpliendo con regulaciones de protección de datos.
