@@ -1,0 +1,67 @@
+AUTOMATIZACIÓN SEMANA 10 - FLUJO N8N Y TELEGRAM
+
+FLUJO SIMPLE: NOTIFICACIÓN DE NUEVOS REPORTES
+
+¿QUÉ EVENTO ACTIVA EL FLUJO?
+
+Un nuevo reporte es registrado en el formulario de incidencias.
+Evento: POST a /api/reportes con datos de la incidencia.
+Trigger en n8n: Webhook que escucha registros nuevos.
+
+¿QUÉ MENSAJE SE ENVIARÍA A TELEGRAM?
+
+Mensaje automático al grupo o chat de coordinadores:
+
+"🔔 Nuevo Reporte Recibido
+
+Categoría: [CATEGORÍA]
+Ubicación: [BARRIO/ZONA]
+Descripción breve: [PRIMERAS 100 CARACTERES]
+Fecha/Hora: [TIMESTAMP]
+ID de Seguimiento: [CÓDIGO ÚNICO]
+
+➡️ Revisar en el sistema: [ENLACE SEGURO AL REPORTE]"
+
+¿QUÉ INFORMACIÓN NO DEBERÍA ENVIARSE POR SEGURIDAD?
+
+DATOS QUE NO SE ENVÍAN POR TELEGRAM:
+
+1. IDENTIFICACIÓN PERSONAL
+   ❌ Nombres completos del reportante
+   ❌ Números de cédula o documentos de identidad
+   ❌ Pasaportes o IDs internacionales
+
+2. CONTACTO DIRECTO
+   ❌ Números de teléfono
+   ❌ Direcciones personales completas
+   ❌ Correos electrónicos personales
+   ❌ Redes sociales personales
+
+3. INFORMACIÓN SENSIBLE
+   ❌ Datos médicos o de salud
+   ❌ Información financiera
+   ❌ Claves de acceso o contraseñas
+   ❌ Tokens de API
+
+4. CONTEXTO PRIVADO
+   ❌ Detalles que identifiquen a víctimas
+   ❌ Historiales completos
+   ❌ Información de menores de edad
+
+DATOS SEGUROS PARA ENVIAR:
+
+✅ Categoría de reporte (seguridad, servicios, infraestructura)
+✅ Zona o barrio (sin dirección exacta)
+✅ Descripción general sin datos personales
+✅ ID único o código de seguimiento
+✅ Fecha y hora del reporte
+✅ Enlaces seguros al sistema (con autenticación requerida)
+✅ Estado general del reporte
+
+CRITERIOS DE SEGURIDAD:
+
+- Telegram es un canal público/semi-público: solo datos no sensibles
+- El enlace al reporte requiere autenticación: los detalles completos están protegidos
+- Anonimidad del reportante: se respeta su privacidad
+- Encriptación: Telegram cifra mensajes pero no es como una base de datos privada
+- Auditoría: se registra quién accede a cada reporte en el sistema, no en Telegram
