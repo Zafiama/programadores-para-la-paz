@@ -1,0 +1,75 @@
+DISEÑO DE INTERFAZ - PLATAFORMA COMUNITARIA
+
+════════════════════════════════════════════════════════════════════════════════
+
+ESTRUCTURA GENERAL DE LA INTERFAZ
+
+La interfaz estaría dividida en las siguientes secciones:
+
+1. BARRA DE NAVEGACIÓN SUPERIOR
+   - Logo de la plataforma
+   - Enlace a "Mi Perfil" (solo si está autenticado)
+   - Botón de "Cerrar Sesión" (solo si está autenticado)
+   - Botón de "Registrarse" o "Iniciar Sesión" (si no está autenticado)
+
+2. SECCIÓN PRINCIPAL - CREAR UNA NUEVA CAUSA
+   - Título: "Crear Nueva Causa Comunitaria"
+   - Formulario con los siguientes campos:
+     * Campo de texto: "Título de la Causa" (máximo 100 caracteres)
+     * Área de texto: "Descripción" (máximo 500 caracteres)
+     * Campo de fecha: "Fecha de Inicio" (calendario)
+     * Selector: "Categoría" (educación, salud, ambiente, etc.)
+     * Botón: "Crear Causa" (solo disponible si está autenticado)
+   - Mensaje de confirmación al crear exitosamente
+
+3. LISTA DE CAUSAS DISPONIBLES
+   - Título: "Causas Activas de la Comunidad"
+   - Tarjetas por cada causa con:
+     * Título de la causa
+     * Descripción resumida (primeras 100 caracteres)
+     * Nombre del usuario que creó la causa
+     * Fecha de creación
+     * CONTADOR DE APOYOS (número prominente: "42 apoyos")
+     * BOTÓN DE APOYO: "Apoyar Esta Causa"
+       - Color destacado (verde, azul)
+       - Cambia de texto si ya ha apoyado: "Ya has apoyado"
+     * Botón secundario: "Ver Detalles"
+
+4. VISTA DETALLADA DE UNA CAUSA
+   - Información completa de la causa
+   - Contador detallado de apoyos
+   - Lista de los últimos apoyos con comentarios (sin mostrar datos personales)
+   - Sección de comentarios (solo usuarios autenticados)
+   - Botón para apoyar o para retirar apoyo
+
+5. DISEÑO RESPONSIVO
+   - Versión móvil: una columna
+   - Versión tablet: dos columnas
+   - Versión escritorio: dos o tres columnas
+
+════════════════════════════════════════════════════════════════════════════════
+
+ELEMENTOS DE SEGURIDAD EN LA INTERFAZ
+
+- No mostrar nunca direcciones de email completas (solo usuario@***.com)
+- No mostrar documentos de identidad
+- No mostrar números de teléfono
+- Ocultar información privada de usuarios
+- Mostrar solo el nombre de usuario en la lista de apoyos
+- Indicadores visuales de "conexión segura"
+
+════════════════════════════════════════════════════════════════════════════════
+
+FLUJO DE USUARIO
+
+1. Usuario anonimizado llega a la plataforma
+2. Ve lista de causas sin estar autenticado
+3. Para apoyar una causa, debe registrarse o iniciar sesión
+4. Después de autenticarse, puede:
+   - Apoyar causas
+   - Crear nuevas causas
+   - Ver su perfil
+   - Comentar en causas
+5. Los datos personales están protegidos y no son visibles para otros usuarios
+
+════════════════════════════════════════════════════════════════════════════════
